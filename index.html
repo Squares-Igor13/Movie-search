@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>AJAX</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  
+    <div class="container">
+      <h3 class="text-center">Search:</h3>
+      <div class="border p-3 rounded">
+        <form>
+          <div class="row mb-3">
+            <label for="title" class="col-2">Title: </label>
+            <div class="col-10">
+              <input type="text" id="title" class="form-control">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="type" class="col-2">Type: </label>
+            <div class="col-10">
+              <select name="type" id="type" class="form-control">
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button" id="btn" class="btn btn-outline-secondary btn-block">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="notFound container">
+      <h3 class="text-center text-danger">Not found nothing! Please enter another request</h3>
+    </div>
+
+
+    <div class="container mt-4">
+      <div class="row d-flex justify-content-center" id="content">
+        
+      </div>
+    </div>
+  
+    <div class="container d-flex justify-content-center mb-5" id="pages">
+      <button id="prev"><<</button>
+      <button id="next">>></button>
+    </div>
+
+    
+
+    <div id="info" class="container mt-5 mb-5 border rounded">
+
+      <h3 class="text-center mb-5">Film info:</h3>
+      
+      <div class="row">
+        <div class="col-5 d-flex justify-content-center">
+          <img id="imgMovie" alt="">
+        </div>
+        <div class="col-7">
+
+          <div class="flexInfo">
+            <b>Title:</b>
+            <div id="titleInfo"></div>
+          </div>
+          <hr>
+          <div class="flexInfo">
+            <b>Released:</b>
+            <div id="released"></div>
+          </div>
+          <hr>
+          <div class="flexInfo">
+            <b>Genre:</b>
+            <div id="genre"></div>
+          </div>
+          <hr>
+          <div class="flexInfo">
+            <b>Country:</b>
+            <div id="country"></div>
+          </div>
+          <hr>
+          <div class="flexInfo">
+            <b>Director:</b>
+            <div id="director"></div>
+          </div>
+          <hr>
+          <div class="flexInfo">
+            <b>Writer:</b>
+            <div id="writer"></div>
+          </div>
+          <hr>
+          <div class="flexInfo">
+            <b>Actors:</b>
+            <div id="actors"></div>
+          </div>
+          <hr>
+          <div class="flexInfo">
+            <b>Awards:</b>
+            <div id="awards"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+    
+    
+
+
+      

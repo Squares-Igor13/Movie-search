@@ -1,0 +1,45 @@
+img {
+	width: 130px;
+	height: 210px;
+}
+
+ .card {
+ 	height: 220px;
+ 	margin-bottom: 20px;
+ }
+
+ .flex {
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;
+ }
+
+ #imgMovie {
+ 	height: 430px;
+ 	width: 270px;
+ }
+
+ .notFound {
+ 	display: none;
+ }
+
+ #prev, #next {
+ 	display: none;
+ }
+
+ .active {
+ 	box-shadow: 0 0 3px 3px gray;
+ 	z-index: 1000;
+ }
+
+ #info {
+ 	display: none;
+ }
+
+ .flexInfo div {
+ 	padding-left: 120px;
+ }
+
+ .flexInfo b {
+ 	position: absolute;
+ }
